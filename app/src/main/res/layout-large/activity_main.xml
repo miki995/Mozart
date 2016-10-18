@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.miki.mozart.MainActivity"
+    android:orientation="horizontal"
+    android:background="@drawable/violin"
+    android:weightSum="2"
+    android:baselineAligned="false">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:id="@+id/linearLayout"
+            android:paddingTop="0dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/menu"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@drawable/button"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:drawableBottom="@drawable/menu"
+                android:onClick="switchToMenu"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/Contact"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@drawable/button"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:drawableBottom="@drawable/contact"
+                android:onClick="switchToContact"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/linearLayout2"
+        android:paddingTop="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/order"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:background="@drawable/button"
+            android:textSize="16sp"
+            android:layout_margin="20dp"
+            android:drawableBottom="@drawable/phone"
+            android:onClick="call" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:background="@drawable/button"
+            android:textSize="16sp"
+            android:layout_margin="20dp"
+            android:drawableBottom="@drawable/about"
+            android:onClick="switchToAbout" />
+
+    </LinearLayout>
+
+</LinearLayout>
