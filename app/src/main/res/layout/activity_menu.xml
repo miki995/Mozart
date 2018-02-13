@@ -6,7 +6,6 @@
     android:background="@color/backgroundColor"
     android:orientation="vertical"
     tools:context="com.inc.miki.mozart.MainActivity">
-
     <LinearLayout
         android:id="@+id/imageLayout"
         android:layout_width="match_parent"

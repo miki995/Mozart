@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".contact"
+            android:name=".ActivityContact"
             android:label="@string/Contact" />
         <activity
-            android:name=".about"
+            android:name=".ActivityAbout"
             android:label="@string/about" />
         <activity android:name=".MenuActivity"
             android:label="@string/menu"

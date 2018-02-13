@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -16,6 +18,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
         LinearLayout layout = findViewById(R.id.imageLayout);
 
@@ -28,6 +31,7 @@ public class MenuActivity extends AppCompatActivity {
         imageList.add(R.drawable.p8);
         imageList.add(R.drawable.p9);
         imageList.add(R.drawable.p10);
+        imageList.add(R.drawable.p11);
         imageList.add(R.drawable.p12);
         imageList.add(R.drawable.p13);
         imageList.add(R.drawable.p14);
@@ -56,14 +60,18 @@ public class MenuActivity extends AppCompatActivity {
 
         for (int id : imageList) {
             ImageView image = new ImageView(this);
-            image.setLayoutParams(new android.view.ViewGroup.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+            image.setLayoutParams(new android.view.ViewGroup.LayoutParams
+                    (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
             image.setScaleType(ImageView.ScaleType.FIT_XY);
             image.setImageResource(id);
+            Picasso.with(this).load(id).into(image);
             layout.addView(image);
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
 }
-
-

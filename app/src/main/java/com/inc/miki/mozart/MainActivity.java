@@ -21,25 +21,21 @@ public class MainActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
-        overridePendingTransition(R.anim.animation_about, R.anim.animation_about);
     }
 
     public void switchToMenu(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.animation_about, R.anim.animation_about);
     }
 
     public void switchToContact(View view) {
-        Intent intent = new Intent(this, contact.class);
+        Intent intent = new Intent(this, ActivityContact.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.animation_about, R.anim.animation_about);
     }
 
     public void switchToAbout(View view) {
-        Intent intent = new Intent(this, about.class);
+        Intent intent = new Intent(this, ActivityAbout.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.animation_about, R.anim.animation_about);
     }
 
 }
