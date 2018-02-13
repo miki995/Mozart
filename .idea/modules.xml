@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Mozart.iml" filepath="$PROJECT_DIR$/Mozart.iml" />
+      <module fileurl="file://C:\Users\S\Documents\GitHub\Mozart\Mozart.iml" filepath="C:\Users\S\Documents\GitHub\Mozart\Mozart.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

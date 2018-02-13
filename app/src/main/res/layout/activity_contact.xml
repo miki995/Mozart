@@ -21,8 +21,7 @@
     android:layout_weight="2"
     android:text="@string/descriptionStreet"
     android:textColor="@android:color/white"
-    android:textSize="12sp"
-    android:id="@+id/textView2" />
+    android:textSize="12sp" />
 
     <Button
         android:layout_width="0dp"
@@ -40,14 +39,12 @@
         android:background="@android:color/transparent"
         android:drawableTop="@drawable/web"
         android:onClick="siteMocart"
-        android:id="@+id/button"
         android:paddingBottom="2dp" />
 
 </LinearLayout>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
         android:src="@drawable/mapa"
         android:contentDescription="@string/map"/>
 

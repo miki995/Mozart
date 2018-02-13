@@ -2,8 +2,11 @@ package com.inc.miki.mozart;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -20,7 +23,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
+        final ProgressBar progressBar = findViewById(R.id.progresBar);
         LinearLayout layout = findViewById(R.id.imageLayout);
+        progressBar.setVisibility(View.VISIBLE);
 
         imageList.add(R.drawable.p2);
         imageList.add(R.drawable.p3);
@@ -64,7 +69,20 @@ public class MenuActivity extends AppCompatActivity {
                     (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
             image.setScaleType(ImageView.ScaleType.FIT_XY);
             image.setImageResource(id);
-            Picasso.with(this).load(id).into(image);
+            Picasso.with(this).load(id)
+                    .into(image, new com.squareup.picasso.Callback() {
+                        @Override
+                        public void onSuccess() {
+                            if (progressBar != null) {
+                                progressBar.setVisibility(View.GONE);
+                            }
+                        }
+
+                        @Override
+                        public void onError() {
+                            Toast.makeText(MenuActivity.this, "Nemate dovoljno memorije za prikazivanje menija!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
             layout.addView(image);
         }
     }

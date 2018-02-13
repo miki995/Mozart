@@ -34,5 +34,3 @@ public class ActivityContact extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 }
-
-
