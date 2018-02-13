@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/violin"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context="com.inc.miki.mozart.MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:src="@drawable/logo1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="33dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="switchToMenu"
+            android:src="@drawable/m1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="call"
+            android:src="@drawable/m2" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="switchToContact"
+            android:src="@drawable/m3" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="switchToAbout"
+            android:src="@drawable/m4" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

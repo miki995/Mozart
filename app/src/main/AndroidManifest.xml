@@ -22,9 +22,9 @@
         <activity
             android:name=".about"
             android:label="@string/about" />
-        <activity android:name=".menu"
-            android:screenOrientation="portrait"
+        <activity android:name=".MenuActivity"
             android:label="@string/menu"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:largeHeap="true">
         </activity>
     </application>
