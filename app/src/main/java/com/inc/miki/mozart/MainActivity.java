@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.inc.miki.mozart.menu.RightMenuActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchToMenu(View view) {
-        Intent intent = new Intent(this, MenuActivity.class);
+        Intent intent = new Intent(this, SubMenuActivity.class);
         startActivity(intent);
     }
 

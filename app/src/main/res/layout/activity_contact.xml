@@ -15,22 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="4">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="@string/descriptionStreet"
-            android:textColor="@android:color/white"
-            android:textSize="12sp" />
+        android:weightSum="2">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:drawableTop="@drawable/face"
+            android:drawableTop="@drawable/facebook"
             android:onClick="facebookMocart"
             android:paddingBottom="2dp" />
 
@@ -39,9 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:drawableTop="@drawable/web"
-            android:onClick="siteMocart"
-            android:paddingBottom="2dp" />
+            android:drawableTop="@drawable/viber"
+            android:paddingBottom="0dp" />
 
     </LinearLayout>
 
