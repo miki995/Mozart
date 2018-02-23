@@ -22,41 +22,49 @@
         android:layout_margin="33dp"
         android:weightSum="4">
 
-        <ImageButton
+        <Button
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:drawableTop="@drawable/m1"
             android:onClick="switchToMenu"
-            android:src="@drawable/m1" />
+            android:text="@string/menu"
+            android:textColor="@android:color/white" />
 
-        <ImageButton
+        <Button
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:drawableTop="@drawable/m2"
             android:onClick="call"
-            android:src="@drawable/m2" />
+            android:text="@string/call"
+            android:textColor="@android:color/white" />
 
-        <ImageButton
+        <Button
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:drawableTop="@drawable/m3"
             android:onClick="switchToContact"
-            android:src="@drawable/m3" />
+            android:text="@string/Contact"
+            android:textColor="@android:color/white" />
 
-        <ImageButton
+        <Button
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:drawableTop="@drawable/m4"
             android:onClick="switchToAbout"
-            android:src="@drawable/m4" />
+            android:text="@string/about"
+            android:textColor="@android:color/white" />
 
 
     </LinearLayout>
