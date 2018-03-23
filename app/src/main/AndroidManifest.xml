@@ -24,13 +24,17 @@
             android:label="@string/about" />
         <activity
             android:name=".menu.RightMenuActivity"
-            android:label="@string/menu"/>
-        <activity android:name=".menu.LeftMenuActivity"
-            android:label="@string/fMenu"/>
-        <activity android:name=".SubMenuActivity"
-            android:label="@string/choose"/>
-        <activity android:name=".menu.DrinkMenuActivity"
-            android:label="@string/drink"/>
+            android:label="@string/menu" />
+        <activity
+            android:name=".menu.LeftMenuActivity"
+            android:label="@string/fMenu" />
+
+        <activity
+            android:name=".SubMenuActivity"
+            android:label="@string/choose" />
+        <activity
+            android:name=".menu.DrinkMenuActivity"
+            android:label="@string/drink" />
     </application>
 
 </manifest>
